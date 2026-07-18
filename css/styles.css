@@ -215,11 +215,88 @@ body {
   transform: scale(1.02);
 }
 
+.pc-hero-info-strip {
+  width: 100%;
+  max-width: 560px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.pc-hero-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+  padding: 12px 10px;
+  border-radius: 12px;
+  background: rgba(28, 34, 30, 0.78);
+  border: 1px solid rgba(250, 204, 21, 0.24);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
+}
+
+.pc-hero-info-card strong {
+  font-size: 13px;
+  font-weight: 800;
+  color: #facc15;
+  letter-spacing: 0.01em;
+}
+
+.pc-hero-info-card span {
+  font-size: 11px;
+  color: #dfe7df;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pc-hero-marquee {
+  width: 100%;
+  max-width: 560px;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid rgba(250, 204, 21, 0.35);
+  background: rgba(28, 34, 30, 0.85);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.pc-hero-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 10px 0;
+  min-width: max-content;
+  white-space: nowrap;
+  animation: pc-marquee 16s linear infinite;
+}
+
+.pc-hero-marquee-track span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #facc15;
+}
+
+@keyframes pc-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .pc-hero-image-container {
     height: 240px;
     margin-top: 24px;
     padding: 5px;
+  }
+
+  .pc-hero-info-strip {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -273,6 +350,20 @@ body {
   }
 }
 
+@keyframes pc-cta-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 4px 15px rgba(250, 204, 21, 0.26),
+      0 0 0 rgba(250, 204, 21, 0);
+  }
+  50% {
+    box-shadow:
+      0 4px 15px rgba(250, 204, 21, 0.26),
+      0 0 30px rgba(250, 204, 21, 0.5);
+  }
+}
+
 .pc-sticky-cta-container {
   display: flex;
   justify-content: center;
@@ -302,6 +393,7 @@ body {
   padding: 12px 20px;
   text-decoration: none;
   box-shadow: 0 4px 15px rgba(250, 204, 21, 0.26);
+  animation: pc-cta-glow 2.4s ease-in-out infinite;
   transition: all 0.3s ease;
 }
 
