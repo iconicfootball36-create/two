@@ -31,39 +31,41 @@
             </p>
           </div>
 
-          <div class="pc-hero-image-container">
-            <img
-              src="assets\GVS_0236 copy.jpg.jpeg"
-              alt="Polycarp AI Trading Bot Performance"
-              class="pc-hero-image"
-            />
-          </div>
+          <div class="pc-hero-visual">
+            <div class="pc-hero-image-container">
+              <img
+                src="assets\GVS_0236 copy.jpg.jpeg"
+                alt="Polycarp AI Trading Bot Performance"
+                class="pc-hero-image"
+              />
+            </div>
 
-          <div class="pc-hero-info-strip">
-            <div class="pc-hero-info-card">
-              <strong>3 Months</strong>
-              <span>Free Access</span>
+            <div class="pc-hero-info-strip">
+              <div class="pc-hero-info-card">
+                <strong>3 Months</strong>
+                <span>Free Access</span>
+              </div>
+              <div class="pc-hero-info-card">
+                <strong>Smart AI</strong>
+                <span>Trading Bot</span>
+              </div>
+              <div class="pc-hero-info-card">
+                <strong>Telegram</strong>
+                <span>Instant Access</span>
+              </div>
             </div>
-            <div class="pc-hero-info-card">
-              <strong>Smart AI</strong>
-              <span>Trading Bot</span>
-            </div>
-            <div class="pc-hero-info-card">
-              <strong>Telegram</strong>
-              <span>Instant Access</span>
-            </div>
-          </div>
 
-          <div class="pc-hero-marquee" aria-hidden="true">
-            <div class="pc-hero-marquee-track">
-              <span>FREE TRIAL</span>
-              <span>SMART AI</span>
-              <span>3 MONTHS ACCESS</span>
-              <span>TRADE WITH ORACLE</span>
-              <span>FREE TRIAL</span>
-              <span>SMART AI</span>
-              <span>3 MONTHS ACCESS</span>
-              <span>TRADE WITH ORACLE</span>
+            <div class="pc-hero-marquee" aria-hidden="true">
+              <div class="pc-hero-marquee-track">
+                <span>FREE TRIAL</span>
+                <span>SMART AI</span>
+                <span>3 MONTHS ACCESS</span>
+                <span>TRADE WITH ORACLE</span>
+                <span>FREE TRIAL</span>
+                <span>SMART AI</span>
+                <span>3 MONTHS ACCESS</span>
+                <span>TRADE WITH ORACLE</span>
+              </div>
             </div>
           </div>
         </div>
